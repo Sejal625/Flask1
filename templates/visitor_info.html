@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Information</title>
+</head>
+<body>
+    <h1>Visitor Information</h1>
+    <form action="/visitorinformation" method="POST">
+        <input type="text" name="username" placeholder="Enter name" required><br>
+        <input type="text" name="address" placeholder="Enter address" required><br>
+        <input type="text" name="number" placeholder="Enter number" required><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Others"> Others<br><br>
+
+        <textarea name="Description" placeholder="Enter the purpose..." required></textarea><br>
+        <input type="date" name="visitdate" required><br>
+        <input type="time" name="visittime" required><br>
+        <input type="text" name="Department" placeholder="Enter department" required><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

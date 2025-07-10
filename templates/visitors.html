@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Visitors Informations</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color:rgb(249, 215, 215);
+        }
+    </style>
+</head>
+<body>
+    <h1>Visitor Information List</h1>
+    <table border="1px"> 
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact</th>
+            <th>Gender</th>
+            <th>Purpose</th>
+            <th>Visit Date</th>
+            <th>Visit Time</th>
+            <th>Department</th>
+        </tr>
+        {% for visitor in visitors %}
+        <tr>
+            <td>{{ visitor.id }}</td>
+            <td>{{ visitor.Name }}</td>
+            <td>{{ visitor.Address }}</td>
+            <td>{{ visitor.number }}</td>
+            <td>{{ visitor.gender }}</td>
+            <td>{{ visitor.Description }}</td>
+            <td>{{ visitor.visitdate }}</td>
+            <td>{{ visitor.visittime }}</td>
+            <td>{{ visitor.Department }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
